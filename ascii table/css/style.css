@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.box{
+    background:rgb(49, 47, 47) ;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media  screen and (max-width:700px) {
+    .wrapper{      
+        grid-template-columns: repeat(2,1fr);
+        background: olivedrab;             
+        color: white;
+    } 
+}
